@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inical da SmartInf">
+    <title>SmartInf</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-md navbar bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo-smartinf.png" alt="Logo SmartInf"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars fa-lg"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-atracoes" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Atrações
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown-atracoes">
+                                    <li><a class="dropdown-item" href="#">Shows</a></li>
+                                    <li><a class="dropdown-item" href="#">Filmes</a></li>
+                                    <li><a class="dropdown-item" href="#">Peças</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-local" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-map-marker-alt"></i>Escolha sua região
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown-local">
+                                    <li><a class="dropdown-item" href="#">São Paulo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fortaleza</a></li>
+                                    <li><a class="dropdown-item" href="#">Rio de Janeiro</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="form-busca" class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar por nome, tema ou data"
+                                aria-label="Search" size="28">
+                            <button class="btn btn-outline-dark search-btn" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
+                        <div id="autenticacao" class="btn-group" role="group">
+                            <a class="btn btn-primary" href="">CADASTRE-SE</a>
+                            <a class="btn btn-primary" href="">ACESSE SUA CONTA</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <section id="atracoes-em-destaque">
+                <h1 class="display-10">Em destaque</h1>
+                <div id="carousel-atracoes-em-destaque" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-atracoes-em-destaque" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-atracoes-em-destaque" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-atracoes-em-destaque" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="images/marisa-monte-show.jpg" class="img-fluid rounded-start"
+                                            alt="Banner do show da Marisa Monte">
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column justify-content-between">
+                                        <div class="card-body">
+                                            <h3 class="card-title">MARISA MONTE</h3>
+                                            <p class="card-text">SAB, 17 SET - 21:00</p>
+                                            <p class="card-text"><small class="text-muted">Araújo Vianna - Porto Alegre,
+                                                    RS</small></p>
+                                        </div>
+                                        <div class="card-btn">
+                                            <a href="#" class="btn btn-info">VER DETALHES</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="images/homem-aranha-3-filme.jpg" class="img-fluid rounded-start"
+                                            alt="Banner do filme do Homem-Aranha: Sem Volta Para Casa">
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column justify-content-between">
+                                        <div class="card-body">
+                                            <h3 class="card-title">HOMEM-ARANHA: SEM VOLTA PARA CASA</h3>
+                                            <p>Confira as datas e horários disponíveis <i class="fas fa-calendar-alt"></i></p>
+                                            <p class="card-text"><small class="text-muted">Todos os cinemas brasileiros</small></p>
+                                        </div>
+                                        <div class="card-btn">
+                                            <a href="#" class="btn btn-info">VER DETALHES</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="images/lago-dos-cisnes-peça.jpg" class="img-fluid rounded-start"
+                                            alt="Banner da peça O lago dos Cisnes de Tchaikovsk">
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column justify-content-between">
+                                        <div class="card-body">
+                                            <h3 class="card-title">LAGO DOS CISNES DE TCHAIKOVSK</h3>
+                                            <p class="card-text">QUA, 26 jAN - 18h30 e 21h</p>
+                                            <p class="card-text"><small class="text-muted">Teatro Bradesco - São Paulo, SP</small></p>
+                                        </div>
+                                        <div class="card-btn">
+                                            <a href="#" class="btn btn-info">VER DETALHES</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-atracoes-em-destaque"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-atracoes-em-destaque"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section id="atracoes-recomendadas">
+                <h1>Recomendadas para você</h1>
+                <div id="carousel-atracoes-recomendadas" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-atracoes-recomendadas" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-atracoes-recomendadas" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-atracoes-recomendadas" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="images/numanice-show.jpg" class="img-fluid rounded-start"
+                                            alt="Banner do show Numanice - Sabádo das Campeãs">
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column justify-content-between">
+                                        <div class="card-body">
+                                            <h3 class="card-title">NUMANICE | SÁBADO DAS CAMPEÃS</h3>
+                                            <p class="card-text">SAB, 17 SET- 21:00</p>
+                                            <p class="card-text"><small class="text-muted">Rio Beach Club - Rio de
+                                                    Janeiro, RJ</small></p>
+                                        </div>
+                                        <div class="card-btn">
+                                            <a href="#" class="btn btn-info">VER DETALHES</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="images/matrix-4-filme.jpeg" class="img-fluid rounded-start"
+                                            alt="Banner do filme Matrix Ressurrections">
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column justify-content-between">
+                                        <div class="card-body">
+                                            <h3 class="card-title">MATRIX RESSURRECTIONS</h3>
+                                            <p>Confira as datas e horários disponíveis <i class="fas fa-calendar-alt"></i></p>
+                                            <p class="card-text"><small class="text-muted">Todos os cinemas brasileiros</small></p>
+                                        </div>
+                                        <div class="card-btn">
+                                            <a href="#" class="btn btn-info">VER DETALHES</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <img src="images/a-cor-purpura-peça.jpeg" class="img-fluid rounded-start"
+                                            alt="Banner da peça A Cor Púrpura, O Musical">
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column justify-content-between">
+                                        <div class="card-body">
+                                            <h3 class="card-title">A COR PÚRPURA - O MUSICAL</h3>
+                                            <p class="card-text">7 de Janeiro a 13 de Fevereiro</p>
+                                            <p class="card-text"><small class="text-muted">Teatro Riachuelo RJ - Rio de Janeiro, RJ </small></p>
+                                        </div>
+                                        <div class="card-btn">
+                                            <a href="#" class="btn btn-info">VER DETALHES</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-atracoes-recomendadas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-atracoes-recomendadas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row row-cols-2 row-cols-lg-4">
+                <div class="col">
+                    <p>Está com problema?</p>
+                    <button type="button" class="btn btn-success" onclick="">SUPORTE</button>
+                </div>
+                <div class="col">
+                    <p>Formas de pagamento</p>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href=""><i class="fab fa-cc-mastercard"></i></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href=""><i class="fab fa-cc-visa"></i></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href=""><i class="fab fa-cc-paypal"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Siga-nos nas redes sociais</p>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href=""><i class="fab fa-instagram-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Baixe nosso App</p>
+                    <ul id="apps-badge" class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href=""><img src="images/google-play-badge.png" alt="Badge para Google Play"></a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href=""><img src="images/apple-store-badge.png" alt="Badge para Play Store"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyright" class="d-flex justify-content-center">
+                <p>&copy; Tarcísio Mesquita/Monalysa K. Yoshikawa - Projeto de Bloco: TP5 </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    background-color:whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+header {
+   padding: 10px 20px;
+   background-color: #212529;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+
+i {
+    color: white;
+}
+
+a.btn {
+    margin: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+button {
+    color: white;
+}
+
+nav i {
+    padding-right: 10px;
+}
+
+.nav-item {
+    margin: 0 10px
+}
+
+nav {
+    margin: 0 20px;
+}
+
+form {
+    margin: 0 20px;
+}
+
+.search-btn {
+    margin: 0px;
+    padding: 0px
+}
+
+.nav-link {
+    font-size: 1em;
+    color: white;
+    font-weight: 550;
+}
+
+#autenticacao a{
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.carousel {
+    margin: 20px auto;
+}
+
+.carousel-indicators {
+    bottom:-40px;
+}
+
+.carousel-inner {
+    margin-bottom:40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+.card {
+    margin: auto;
+    width: 90%;
+}
+
+h3.card-title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.card-btn {
+    margin: 10px;
+}
+
+.card i {
+    font-size: 1em;
+    color: gray
+}
+
+footer .list-group-item {
+    border: none;
+    background-color: #212529;
+    color: white;
+    padding-left: 0;
+    
+}
+
+footer {
+    margin-top: 100px;
+    padding: 20px 50px;
+    background-color: #212529;
+}
+
+footer a {
+    padding: 0;
+    margin-left: 0;
+}
+
+footer p {
+    font-size: 1em;
+    color: white;
+}
+
+footer i {
+    font-size: 2.5em;
+}
+
+footer img {
+    width: 130px;
+    height: 39px;
+}
+
+#copyright {
+    font-size: 0.85em;
+    margin-top: 20px;
+}
